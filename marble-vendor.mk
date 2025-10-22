@@ -407,6 +407,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946480857061761.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061761.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lightSensorConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lightSensorConfig.json \
@@ -598,6 +600,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libsensor_cal@2.0 \
+    libssccalapi@2.0 \
+    vendor.xiaomi.sensor.citsensorservice@1.1 \
+    vendor.xiaomi.sensor.citsensorservice@2.0 \
     com.qti.actuator.marble_ofilm_ov64b40_gt9764_wide_actuator \
     com.qti.eeprom.marble_ofilm_gc02m1_p24c64f_macro_i_eeprom \
     com.qti.eeprom.marble_ofilm_imx355_gt24p64e_ultra_i_eeprom \
@@ -794,6 +800,7 @@ PRODUCT_PACKAGES += \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
+    vendor.xiaomi.sensor.citsensorservice@2.0-impl \
     libAF \
     libMiMotion \
     libQnnHtpAltPrepV69Stub \
@@ -911,7 +918,6 @@ PRODUCT_PACKAGES += \
     libsfeShiftExtrapolation \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
-    libssccalapi@2.0 \
     libsupermoon \
     libswregistrationalgo \
     libsynx \
@@ -938,6 +944,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
     vendor.xiaomi.hardware.campostproc@1.0 \
     vendor.xiaomi.hardware.quickcamera@1.0 \
+    vendor.xiaomi.sensor.communicate@1.0 \
     bm2n00 \
     bm2n01 \
     bm2n02 \
@@ -1022,6 +1029,10 @@ PRODUCT_PACKAGES += \
     misound_res_spk \
     misound_res_spk4ch \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service.xml \
+    vendor.xiaomi.sensor.communicate@1.0_manifest.xml \
     batterysecret \
     vendor.qti.camera.provider@2.7-service_64 \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    vendor.xiaomi.sensor.citsensorservice@2.0-service \
+    vendor.xiaomi.sensor.communicate@1.0-service
